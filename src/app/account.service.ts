@@ -24,4 +24,8 @@ export class AccountService {
     return this.http.post(`${this.baseUrl}`,account);
   }
 
+  updateAccount(id:number, value:any): Observable<Object>{
+    return this.http.put(`${this.baseUrl}/${id}`,value);
+  }
+
 }

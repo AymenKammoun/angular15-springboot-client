@@ -8,13 +8,15 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
 import { AccountListComponent } from './account-list/account-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { UpdateAccountComponent } from './update-account/update-account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateAccountComponent,
     AccountDetailsComponent,
-    AccountListComponent
+    AccountListComponent,
+    UpdateAccountComponent
   ],
   imports: [
     BrowserModule,
