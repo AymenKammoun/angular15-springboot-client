@@ -27,9 +27,12 @@ export class UpdateAccountComponent implements OnInit {
 
   updateAccount() {
     this.accountService.updateAccount(this.id, this.account)
-      .subscribe(data => console.log(data), error => console.log(error));
-    this.account = new Account();
-    this.gotoList();
+      .subscribe(data => {
+        console.log(data);
+        this.account = new Account();
+        this.gotoList();
+      }, error => console.log(error));
+
   }
 
   onSubmit() {

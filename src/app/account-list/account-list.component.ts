@@ -33,4 +33,8 @@ export class AccountListComponent implements OnInit{
     this.router.navigate(['details',id]);
   }
 
+  accountUpdate(id:number){
+    this.router.navigate(['update',id]);
+  }
+
 }

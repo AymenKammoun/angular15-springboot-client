@@ -27,6 +27,7 @@
           <td>{{account.amount}}</td>
           <td><button (click)="deleteAccount(account.id)" class="btn btn-danger">Delete</button></td>
           <td><button (click)="accountDetails(account.id)" class="btn btn-info" style="margin-left: 10px;">Details</button></td>
+          <td><button (click)="accountUpdate(account.id)" class="btn btn-primary" style="margin-left: 10px;">Update</button></td>
         </tr>
       </tbody>
     </table>
